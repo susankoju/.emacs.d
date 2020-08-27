@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Jason Milkins <jasonm23@gmail.com>
+# name: Code
+# group: Package headers
+# --
+;;; Code:
+
+$0

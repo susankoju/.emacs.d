@@ -1,0 +1,20 @@
+# contributor: Jason Milkins <jasonm23@gmail.com>
+# name: use mode template
+# key: use
+# --
+;;; use-${1:package} --- configure $1
+;;; Commentary:
+;;; Code:
+(require 'use-package)
+
+(use-package $1
+  :init ;; before use
+  $2
+  :config ;; after use
+  $3
+  :bind
+  $4
+  )
+
+(provide 'use-$1)
+;;; use-$1 ends here

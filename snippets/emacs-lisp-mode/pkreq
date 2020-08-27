@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# contributor: Jason Milkins <jasonm23@gmail.com>
+# name: Package Requires
+# group: Package headers
+# --
+;;; Package-Requires: $0

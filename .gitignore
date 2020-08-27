@@ -1,0 +1,7 @@
+#eshell dir with histroy and lastdir
+eshell
+*eshell*
+
+#Internal
+/history
+/auto-save-list/
