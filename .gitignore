@@ -5,3 +5,6 @@ eshell
 #Internal
 /history
 /auto-save-list/
+
+#cache
+cache

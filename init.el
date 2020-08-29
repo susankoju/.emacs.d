@@ -29,13 +29,29 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 ;; syntax highlighting
 (global-font-lock-mode t)
+(setq js-indent-level 2)
+;;(desktop-save-mode 1)
 
-(iswitchb-mode 1)
-(eshell)
+;; customize buffer
+;;(iswitchb-mode 1)
+(ansi-term "/bin/bash")
+(split-window-vertically)
+(split-window-right)
+(switch-to-buffer (next-buffer))
 (split-window-below)
+;;(shrink-window)
+;;(repeat '10)
 (dired "./")
 ;; replace current dired buffer with another buffer
-(put 'dired-find-alternate-file 'disabled nil)
+;;(put 'dired-find-alternate-file 'disabled nil)
+
+;; dired-sidebar
+;;(add-to-list 'load-path "~/")
+(require 'dired-sidebar)
+(use-package dired-sidebar
+  :ensure t
+  :commands (dired-sidebar-toggle-sidebar))
+(dired-sidebar-mode)
 
 ;; yasnippet
 (add-to-list 'load-path
@@ -44,8 +60,13 @@
 (yas/load-directory "~/.emacs.d/snippets")
 (setq yas/indent-line nil)
 (yas-global-mode 1)
-(define-key yas-minor-mode-map (kbd "TAB") 'yas-expand)
+;;(define-key yas-minor-mode-map (kbd "TAB") 'yas-expand)
 ;;(define-key yas-minor-mode-map (kbd "SPC") nil)
+
+;; projectile
+(projectile-mode +1)
+(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 ;; auto-complete
 (require 'auto-complete)
@@ -58,7 +79,7 @@
 ;;(setq ac-auto-start nil)
 ;;(ac-set-trigger-key "TAB")
 ;; make it slower fto save CPU cycles
-(setq ac-delay 0.25)
+(setq ac-delay 0.5)
 
 ;; slime - Superior Lisp Interaction Mode for Emacs.
 (setq inferior-lisp-program (executable-find "sbcl"))
@@ -75,7 +96,7 @@
  '(delete-selection-mode nil)
  '(package-selected-packages
    (quote
-    (auto-complete js-react-redux-yasnippets yasnippet-snippets slime sml-mode))))
+    (projectile dired-sidebar auto-complete js-react-redux-yasnippets yasnippet-snippets slime sml-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
