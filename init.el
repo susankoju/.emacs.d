@@ -9,9 +9,9 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 ;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
 ;; and `package-pinned-packages`. Most users will not need or want to do this.
-;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-(add-to-list 'package-archives
-             '("melpa-milkbox" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+;;(add-to-list 'package-archives
+;;             '("melpa-milkbox" . "https://melpa.milkbox.net/packages/") t)
 
 (package-initialize)
 
@@ -32,13 +32,14 @@
 (setq js-indent-level 2)
 ;;(desktop-save-mode 1)
 
+
 ;; customize buffer
 ;;(iswitchb-mode 1)
-(ansi-term "/bin/bash")
-(split-window-vertically)
+;;(ansi-term "/usr/local/bin/zsh")
+;;(split-window-vertically)
 (split-window-right)
-(switch-to-buffer (next-buffer))
-(split-window-below)
+;;(switch-to-buffer (next-buffer))
+;;(split-window-below)
 ;;(shrink-window)
 ;;(repeat '10)
 (dired "./")
@@ -46,12 +47,15 @@
 ;;(put 'dired-find-alternate-file 'disabled nil)
 
 ;; dired-sidebar
-;;(add-to-list 'load-path "~/")
+(add-to-list 'load-path "~/")
 (require 'dired-sidebar)
 (use-package dired-sidebar
   :ensure t
   :commands (dired-sidebar-toggle-sidebar))
 (dired-sidebar-mode)
+
+;; speedbar hidden file
+(setq speedbar-directory-unshown-regexp "^\\(CVS\\|RCS\\|SCCS\\|\\.\\.*$\\)\\'")
 
 ;; yasnippet
 (add-to-list 'load-path
@@ -79,7 +83,7 @@
 ;;(setq ac-auto-start nil)
 ;;(ac-set-trigger-key "TAB")
 ;; make it slower fto save CPU cycles
-(setq ac-delay 0.5)
+(setq ac-delay 0.3)
 
 ;; slime - Superior Lisp Interaction Mode for Emacs.
 (setq inferior-lisp-program (executable-find "sbcl"))
@@ -89,14 +93,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (Jadedragon)))
+ '(custom-enabled-themes '(Jadedragon))
  '(custom-safe-themes
-   (quote
-    ("e476c3f54a7df4689f3c717afdc6f603b01baaa95955225a35175dba924cf984" "16ed5d79725d8ee017d2a0b1d22164a471d85e02da6edff648a749be4913eb4a" "e18400ada6d3f8bd0e7bf14bcc71f414f69b4f8dd98c828c0a170b2a80e3132b" "0bba58c00eafcc19a5608fa16c4572054f506eb0e9a67cb4f96422edbd2dd3d7" "f22fdaae648758cafb56ac54ac9ef6f6347f8d6dcaf25e4fe23ea1e20e1dbcf6" "d15d6b0601c8e4da6abab8179655f9974855cea55f231a67192d0d87d1821c1b" "d2ad04cdf7af01a803f0dd1b399f3cf0904688121f8a680f7a1af3935f4f1625" default)))
+   '("e476c3f54a7df4689f3c717afdc6f603b01baaa95955225a35175dba924cf984" "16ed5d79725d8ee017d2a0b1d22164a471d85e02da6edff648a749be4913eb4a" "e18400ada6d3f8bd0e7bf14bcc71f414f69b4f8dd98c828c0a170b2a80e3132b" "0bba58c00eafcc19a5608fa16c4572054f506eb0e9a67cb4f96422edbd2dd3d7" "f22fdaae648758cafb56ac54ac9ef6f6347f8d6dcaf25e4fe23ea1e20e1dbcf6" "d15d6b0601c8e4da6abab8179655f9974855cea55f231a67192d0d87d1821c1b" "d2ad04cdf7af01a803f0dd1b399f3cf0904688121f8a680f7a1af3935f4f1625" default))
  '(delete-selection-mode nil)
  '(package-selected-packages
-   (quote
-    (projectile dired-sidebar auto-complete js-react-redux-yasnippets yasnippet-snippets slime sml-mode))))
+   '(lsp-java projectile dired-sidebar auto-complete js-react-redux-yasnippets yasnippet-snippets slime sml-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -107,3 +109,7 @@
 (setq exec-path (cons "usr/share/smlnj/bin" exec-path))
 ;;(load /usr/share/smlnj/bin/sml)
 
+
+;; java mode
+(require 'lsp-java)
+(add-hook 'java-mode-hook #'lsp)

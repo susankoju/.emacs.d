@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/Desktop/lf-training/")
+("/usr/home/luser/.emacs.d/" "/usr/home/luser/Desktop/practice/" "/usr/home/luser/Desktop/lf-training/" "/usr/home/luser/dotFiles.d/" "/usr/home/luser/Desktop/gwell/GWell/" "/usr/home/luser/Desktop/gwell/gwell-clinician-portal/" "~/.emacs.d/")
