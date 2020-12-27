@@ -1,0 +1,7 @@
+import pgeocode
+
+def get_longitude_latitude(postal_code, country="us"):
+    """ Returns longitude and latitude from postal code """
+    nomi = pgeocode.Nominatim(country)
+    geo_data = nomi.query_postal_code(postal_code)
+    

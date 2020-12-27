@@ -1,0 +1,37 @@
+CREATE database "l";
+
+
+USE "l";
+
+CREATE TABLE "users" (
+                      id INT PRIMARY KEY,
+                         first_name VARCHAR(30),
+                         last_name VARCHAR(30),
+                         
+                         );
+
+
+INSERT INTO "users" first_name, last_name VALUES("roshan", "lasiwa");
+
+
+SELECT * FROM "users" WHERE id=2;
+
+
+CREATE TABLE "orders" (
+                         id INT PRIMARY KEY,
+                         name VARCHAR(30),
+                         user_id INT,
+                         FOREIGN KEY(user_id) REFERENCE users(id)
+                         );
+
+SELECT * FROM orders as o INNER JOIN "users" as u on o.user_id=u.id;
+SELECT * FROM orders as o OUTER JOIN "users" as u on o.user_id=u.id;
+SELECT * FROM orders as o LEFT JOIN "users" as u on o.user_id=u.id;
+SELECT * FROM orders as o LEFT JOIN "users" as u on o.user_id=u.id;
+
+DELETE FROM orders where id=1;
+
+
+UPDATE orders name=new_name WHERE id=2
+
+
