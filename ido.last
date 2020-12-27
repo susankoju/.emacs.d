@@ -2,16 +2,30 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/buntu/" . "Desktop/")
+ ("/home/buntu/Desktop/practice/" . "py/")
+ ("/home/buntu/Desktop/" . "practice/")
+ ("/home/buntu/.emacs.d/opt/" . "slime/")
+ ("/home/buntu/.emacs.d/" . "opt/")
+ ("/home/buntu/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/buntu/.emacs.d/"
+ "/home/buntu/Desktop/practice/hy/"
+ "/home/buntu/Desktop/practice/lisp/"
+ "/home/buntu/"
+ "/home/buntu/Desktop/practice/c/computer-graphics/"
  "/home/buntu/Desktop/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "init.el"
+ "hy.hy"
+ "cepl.lisp"
+ ".emacs"
+ "dda-line-algorithm.c"
  "scheduleCron.py"
  "writeData.py"
  "geo.py"
@@ -19,9 +33,25 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/buntu/Desktop/" (24539 16930 938831 297000) "PitchBook_Excel_Plugin_Flyer_v6.2.pdf" "BIT FULL SYLLABUS.pdf" "pitchbook-excel-plugin-user-guide.pdf" "Rappaport - Wireless Communications,Principles and Practice-ISBN 0130422320.pdf" "innovaccer/" "jira-node/" "pre" "Test pitchBook and pubMed.xlsx" "local" "output-2635.xlsx" "foody_bag/" "django/" "[Bookflare.net] - Art of Java Web Development.pdf" "./" "freeBSD.pdf" "BIT_V_R_8631.pdf" "Screenshot_20201020_130732.png" "django-boilerplate-cookiecutter/" "inhealth/" "[Bookflare.net] - Java Web Services Up and Running , Second Edition.epub" "my.png" "p/" "writeData.py" "note.org" "20201028_135101.jpg" "geo.py" "companies-remaining.xlsx" "Referrals" "gwell/" "../" "steam.desktop" "clojure/" "d.txt" "final-2.xlsx" "lisp.c/" "130237094_227894082245849_4850850297897692170_n.jpg" "JiraSpringBoot/" "129859201_173390181181812_6322195147913962029_n.mp4" "final (1).xlsx")
+ ("/home/buntu/.emacs.d/" (24552 41617 267619 785000) ".git/" "init.el~" "./" "opt/" "ido.last" "eshell/" "elpa/" "../" "snippets/" "init.el" "auto-save-list/" "backups/")
 
- ("/home/buntu/" (24524 42381 48041 867000) ".yarnrc" ".steampath" ".mozilla/" ".java/" ".android/" ".lein/" ".pki/" ".bash_logout" ".nvm/" ".pylint.d/" ".pytest_cache/" ".mongorc.js" ".profile" ".cookiecutters/" "pgeocode_data/" ".cache/" "./" ".clojure/" "Documents/" ".local/" "Videos/" ".emacs.d/" ".bash_history" ".gnome/" ".sudo_as_admin_successful" ".wget-hsts" "Public/" ".gradle/" ".bashrc" ".gitconfig" ".ICAClient/" ".yarn/" "Templates/" "../" "VirtualBox VMs/" ".pulse-cookie" ".npm/" ".pam_environment" ".zoom/" ".cookiecutter_replay/" ".config/" "google-chrome-stable_current_amd64.deb" ".emacs" "snap/" ".jdks/" "Desktop/" "Downloads/" ".m2/" ".dbshell" "Music/" "Pictures/" ".viminfo" ".steampid" ".ssh/" ".vscode/" ".steam/" ".gnupg/" ".python_history" ".emacs~")
+ ("/home/buntu/Desktop/practice/hy/" (24552 31473 842720 484000) "#hy.hy#" "hy.hy" "./" "__pycache__/" "../")
+
+ ("/home/buntu/Desktop/practice/" (24552 30214 409757 685000) "node_modules/" "lisp/" ".git/" "hy/" "./" "java/" "react/" "py/" ".gitignore" "c/" "ani/" "../" "node/" "sml/" "scripts/" "package-lock.json" ".vscode/" "README.md" "project/")
+
+ ("/home/buntu/" (24552 33171 316973 139000) ".yarnrc" ".steampath" ".mozilla/" ".java/" ".android/" ".lein/" ".pki/" ".bash_logout" ".nvm/" ".pylint.d/" ".pytest_cache/" ".mongorc.js" ".slime/" ".profile" "outfile" ".cookiecutters/" "pgeocode_data/" ".cache/" "./" ".sbclrc" ".clojure/" "Documents/" ".local/" ".quicklisp/" "Videos/" ".emacs.d/" ".bash_history" ".gnome/" ".sudo_as_admin_successful" ".wget-hsts" "Public/" ".gradle/" ".bashrc" ".gitconfig" ".ICAClient/" ".yarn/" "Templates/" "../" "VirtualBox VMs/" ".pulse-cookie" "linux-install-1.10.1.536.sh" ".npm/" ".pam_environment" ".zoom/" ".cookiecutter_replay/" ".config/" "google-chrome-stable_current_amd64.deb" "snap/" ".jdks/" "Desktop/" "Downloads/" ".m2/" ".dbshell" "Music/" "Pictures/" ".slime-history.eld" ".viminfo" ".steampid" ".ssh/" "quicklisp.lisp" ".vscode/" "my-project/" ".steam/" ".gnupg/" ".python_history")
+
+ ("/home/buntu/Desktop/practice/lisp/" (24552 30130 112910 784000) "arthematic" "hello-n.lisp" "./" "guess-my-number.lisp" "first.lisp" "macros.lisp" "wizards-adventure-game.lisp" "first.fas" "../" "paip1-exercise-1-1.lisp" "list.fasl" "paip1-exercise-1-2.lisp" "swap.lisp" "PAIP-part1.pdf" "list" "cepl.lisp" "graphics.lisp" "first.lib")
+
+ ("/home/buntu/Desktop/practice/py/" (24552 4621 273922 118000) "fabfile.py" "args.py" "cli.py" "fibo.py" "first.py" "scrapy/" "./" "app.py" "orm.py" "basics.py" "nmap/" "neural-network/" "nw/" "bigSorting.py" "nn.py" "__pycache__/" "file_handling.py" "selenium/" "cv/" "file.txt" "../" "test.txt" "beautiful-soup/" "shoppingList-class.py" "sort.py" "flask/" "basic.py" "url_requests.py" "test/" "url_scraper.py" "fabfile.pyc" "shoppingList-function.py" "collections.py")
+
+ ("/home/buntu/Desktop/practice/c/computer-graphics/" (24552 6688 746573 631000) "./" "dda-line-algorithm.c" "../")
+
+ ("/home/buntu/.emacs.d/opt/" (24552 23307 452815 386000) "slime/" "./" "../")
+
+ ("/home/buntu/.emacs.d/opt/slime/" (24552 22398 917616 979000) "slime-autoloads.el" "xref.lisp" ".git/" "start-swank.lisp" "packages.lisp" "swank.asd" ".gitattributes" "slime.el" "doc/" "./" "swank-loader.lisp" "slime-tests.el" ".gitignore" "lib/" "../" ".gitref" ".github/" "CONTRIBUTING.md" "contrib/" "sbcl-pprint-patch.lisp" "Makefile" "nregex.lisp" "swank.lisp" "NEWS" "metering.lisp" "PROBLEMS" "swank/" "README.md")
+
+ ("/home/buntu/Desktop/" (24552 5486 942521 921000) "PitchBook_Excel_Plugin_Flyer_v6.2.pdf" "rfc4120.txt" "BIT FULL SYLLABUS.pdf" "pitchbook-excel-plugin-user-guide.pdf" "Rappaport - Wireless Communications,Principles and Practice-ISBN 0130422320.pdf" "innovaccer/" "jira-node/" "pre" "Test pitchBook and pubMed.xlsx" "local" "output-2635.xlsx" "foody_bag/" "django/" "[Bookflare.net] - Art of Java Web Development.pdf" "./" "practice/" "freeBSD.pdf" "BIT_V_R_8631.pdf" "Screenshot_20201020_130732.png" "JIRA-React/" "django-boilerplate-cookiecutter/" "inhealth/" "[Bookflare.net] - Java Web Services Up and Running , Second Edition.epub" "my.png" "Computer Graphics/" "p/" "writeData.py" "scheduleCron.py" "note.org" "20201028_135101.jpg" "geo.py" "companies-remaining.xlsx" "Referrals" "gwell/" "../" "steam.desktop" "db.txt" "inref-api-service/" "clojure/" "d.txt" "final-2.xlsx" "lisp.c/" "130237094_227894082245849_4850850297897692170_n.jpg" "JiraSpringBoot/" "129859201_173390181181812_6322195147913962029_n.mp4" "final (1).xlsx")
 )
 
 ;; ----- ido-unc-hosts-cache -----
