@@ -11,6 +11,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/buntu/Desktop/practice/py/ethical/"
  "/home/buntu/.emacs.d/"
  "/home/buntu/Desktop/practice/hy/"
  "/home/buntu/Desktop/practice/lisp/"
@@ -21,6 +22,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "portscan.py"
  "init.el"
  "hy.hy"
  "cepl.lisp"
@@ -33,13 +35,15 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/buntu/.emacs.d/" (24552 41455 65915 801000) ".git/" "init.el~" "./" "opt/" "ido.last" "eshell/" "elpa/" "../" "init.el" "auto-save-list/" "backups/")
+ ("/home/buntu/" (24552 43228 978829 196000) ".yarnrc" ".steampath" ".mozilla/" ".java/" ".android/" ".lein/" ".pki/" ".bash_logout" ".nvm/" ".pylint.d/" ".pytest_cache/" ".mongorc.js" ".slime/" ".profile" "outfile" ".cookiecutters/" "pgeocode_data/" ".cache/" "./" ".sbclrc" ".clojure/" "Documents/" ".local/" ".quicklisp/" "Videos/" ".emacs.d/" ".bash_history" ".gnome/" ".sudo_as_admin_successful" ".wget-hsts" "Public/" ".gradle/" ".bashrc" ".gitconfig" ".ICAClient/" ".yarn/" "Templates/" "../" "VirtualBox VMs/" ".pulse-cookie" "linux-install-1.10.1.536.sh" ".npm/" ".pam_environment" ".zoom/" ".cookiecutter_replay/" ".config/" "google-chrome-stable_current_amd64.deb" "snap/" ".jdks/" "Desktop/" "Downloads/" ".m2/" ".dbshell" "Music/" "Pictures/" ".slime-history.eld" ".viminfo" ".steampid" ".ssh/" "quicklisp.lisp" ".vscode/" "my-project/" ".steam/" ".gnupg/" ".python_history")
+
+ ("/home/buntu/.emacs.d/" (24552 42472 947004 107000) ".git/" "init.el~" "./" "opt/" "ido.last" "eshell/" "elpa/" "../" "snippets/" "init.el" "auto-save-list/" "backups/")
+
+ ("/home/buntu/Desktop/practice/py/ethical/" (24552 42401 254322 337000) "./" "../")
 
  ("/home/buntu/Desktop/practice/hy/" (24552 31473 842720 484000) "#hy.hy#" "hy.hy" "./" "__pycache__/" "../")
 
  ("/home/buntu/Desktop/practice/" (24552 30214 409757 685000) "node_modules/" "lisp/" ".git/" "hy/" "./" "java/" "react/" "py/" ".gitignore" "c/" "ani/" "../" "node/" "sml/" "scripts/" "package-lock.json" ".vscode/" "README.md" "project/")
-
- ("/home/buntu/" (24552 33171 316973 139000) ".yarnrc" ".steampath" ".mozilla/" ".java/" ".android/" ".lein/" ".pki/" ".bash_logout" ".nvm/" ".pylint.d/" ".pytest_cache/" ".mongorc.js" ".slime/" ".profile" "outfile" ".cookiecutters/" "pgeocode_data/" ".cache/" "./" ".sbclrc" ".clojure/" "Documents/" ".local/" ".quicklisp/" "Videos/" ".emacs.d/" ".bash_history" ".gnome/" ".sudo_as_admin_successful" ".wget-hsts" "Public/" ".gradle/" ".bashrc" ".gitconfig" ".ICAClient/" ".yarn/" "Templates/" "../" "VirtualBox VMs/" ".pulse-cookie" "linux-install-1.10.1.536.sh" ".npm/" ".pam_environment" ".zoom/" ".cookiecutter_replay/" ".config/" "google-chrome-stable_current_amd64.deb" "snap/" ".jdks/" "Desktop/" "Downloads/" ".m2/" ".dbshell" "Music/" "Pictures/" ".slime-history.eld" ".viminfo" ".steampid" ".ssh/" "quicklisp.lisp" ".vscode/" "my-project/" ".steam/" ".gnupg/" ".python_history")
 
  ("/home/buntu/Desktop/practice/lisp/" (24552 30130 112910 784000) "arthematic" "hello-n.lisp" "./" "guess-my-number.lisp" "first.lisp" "macros.lisp" "wizards-adventure-game.lisp" "first.fas" "../" "paip1-exercise-1-1.lisp" "list.fasl" "paip1-exercise-1-2.lisp" "swap.lisp" "PAIP-part1.pdf" "list" "cepl.lisp" "graphics.lisp" "first.lib")
 
